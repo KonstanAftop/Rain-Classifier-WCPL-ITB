@@ -3,7 +3,7 @@ import cv2
 import csv
 from datetime import datetime, timedelta
 
-date=datetime.now()+timedelta(days=2)
+date=datetime.now()+timedelta(days=1)
 date=date.strftime("%Y%m%d")
 time_list=[1,4,7,10,13,16,19,22]
 
