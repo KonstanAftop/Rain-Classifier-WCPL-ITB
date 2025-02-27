@@ -15,7 +15,8 @@ for time in time_list:
     takhujan=[(0, 0, 0)]
     low=[(0, 255, 255), (0, 230, 255), (0, 206, 255), (0, 181, 255), (0, 156, 255), (0, 131, 255), (0, 107, 255), (0, 82, 255)]
     medium=[(0, 57, 255), (0, 46, 235)]
-    high=[(0, 39, 207), (0, 32, 180), (0, 26, 153), (0, 19, 126), (0, 12, 99), (0, 5, 71)]
+    high=[(0, 39, 207), (0, 32, 180)] 
+    vhigh=[(0, 26, 153), (0, 19, 126), (0, 12, 99), (0, 5, 71)]
 
 
     x,y=333,247
@@ -25,13 +26,15 @@ for time in time_list:
     b,g,r= img[y,x]
     print(r,g,b)
     if (r,g,b) in low:
-        current_rain=[date,time,0,1,0,0]
+        current_rain=[date,time,0,1,0,0,0]
     elif (r,g,b) in medium:
-        current_rain=[date,time,0,0,1,0]
+        current_rain=[date,time,0,0,1,0,0]
     elif (r,g,b) in high:
-        current_rain=[date,time,0,0,0,1]
+        current_rain=[date,time,0,0,0,1,0]
+    elif (r,g,b) in vhigh:
+        current_rain=[date,time,0,0,0,0,1]
     else:
-        current_rain=[date,time,1,0,0,0]
+        current_rain=[date,time,1,0,0,0,0]
 
     with open("hasil.csv", "a", newline='') as file:
         writer = csv.writer(file)

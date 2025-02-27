@@ -42,9 +42,9 @@ This project automates the process of extracting and classifying rainfall intens
 The script generates a `hasil.csv` file with the following structure:
 
 ```
-Date, Time, No Rain, Low, Medium, High
-20250228, 1, 0, 1, 0, 0
-20250228, 4, 0, 0, 1, 0
+Date, Time, No Rain, Low, Medium, High, Very High
+20250228, 1, 0, 1, 0, 0, 0
+20250228, 4, 0, 0, 1, 0, 0
 ...
 ```
 
