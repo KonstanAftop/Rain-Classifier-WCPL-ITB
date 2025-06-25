@@ -12,7 +12,7 @@ This project automates the process of extracting and classifying rainfall intens
   - Medium Rainfall: 5 - 10 mm
   - High Rainfall: >10 mm
 - **Data storage:** Saves extracted data in a CSV file.
-- **Automated execution:** Runs daily at 10 UTC.
+- **Automated execution:** Runs daily at 9 UTC.
 - **Daily forecast updates:** Automatically adds the next day's rainfall prediction to the CSV file.
 
 ## Algorithm Explanation
